@@ -1,31 +1,36 @@
 import React from 'react';
-import { View, Text, FlatList } from 'react-native';
-import styled from 'styled-components';
+import {
+  StyledView,
+  Title,
+  StyledText,
+  StyledFlatList,
+} from '../components/Basics';
 
 const ListScreen = (params) => {
-  const names = [
+  const friends = [
     { name: 'Sam' },
     { name: 'Jill' },
     { name: 'Tahasa' },
     { name: 'Jess' },
     { name: 'Andy' },
   ];
+
   return (
-    <View>
+    <StyledView>
+      <Title>Friends List</Title>
       <StyledFlatList
-        vertical
-        showsHorizontalScrollIndicator={false}
+        data={friends}
         keyExtractor={(friend) => friend.name}
-        data={names}
+        vertical
+        showsVerticalScrollIndicator={false}
         renderItem={({ item }) => (
-          <Text style={{ marginVertical: 10 }}>{item.name}</Text>
+          // element === { item: { name:'Jill' }, index: 0 }
+          // it includes more than just the data you pass in, just grab item
+          // item === { name: 'Jill' }
+          <StyledText style={{ marginVertical: 10 }}>{item.name}</StyledText>
         )}
       />
-    </View>
+    </StyledView>
   );
 };
-const StyledFlatList = styled(FlatList)`
-  margin-top: 40px;
-`;
-
 export default ListScreen;

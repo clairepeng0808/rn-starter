@@ -1,23 +1,15 @@
 import React from 'react';
-import { Text, StyleSheet, View } from 'react-native';
 import styled from 'styled-components';
+import { StyledView, Title, StyledText } from '../components/Basics';
 
 const ComponentScreen = () => {
   const yourName = 'Claire';
   return (
-    <View>
-      <StyledText>Getting Started with React Native</StyledText>
-      <StyledNameText>My Name is {yourName}</StyledNameText>
-    </View>
+    <StyledView>
+      <Title>Getting Started with React Native</Title>
+      <StyledText>My Name is {yourName}</StyledText>
+    </StyledView>
   );
 };
-
-const StyledText = styled(Text)`
-  font-size: 45px;
-`;
-
-const StyledNameText = styled(Text)`
-  font-size: 20px;
-`;
 
 export default ComponentScreen;
