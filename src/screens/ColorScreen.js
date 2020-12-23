@@ -12,7 +12,7 @@ const ColorScreen = () => {
         style={{
           display: 'flex',
           flexDirection: 'row',
-          justifyContent: 'center',
+          justifyContent: 'start',
         }}
       >
         <Button
@@ -32,7 +32,7 @@ const ColorScreen = () => {
         renderItem={({ item }) => (
           <ColorItem>
             <ColorItemView backgroundColor={item}></ColorItemView>
-            <StyledText>{item}</StyledText>
+            <StyledText color="gray">{item}</StyledText>
           </ColorItem>
         )}
       />
@@ -47,14 +47,15 @@ const randomRgb = () => {
   return `rgb(${red},${green},${blue})`;
 };
 const ColorList = styled(FlatList)`
-  margin: 20px;
+  margin: 20px 0;
 `;
 const ColorItem = styled(View)`
   margin-bottom: 10px;
 `;
 const ColorItemView = styled(View)`
   height: 100px;
-  width: 100px;
+  width: 500px;
+  margin-bottom: 10px;
   background-color: ${(props) => props.backgroundColor};
 `;
 

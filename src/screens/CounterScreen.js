@@ -7,10 +7,12 @@ const CounterScreen = () => {
 
   return (
     <StyledView>
+      <Title center>Current Count</Title>
+      <StyledText center style={{ marginBottom: 20, fontSize: 48 }}>
+        {counter}
+      </StyledText>
       <Button title="Increase" onPress={() => setCounter((prev) => prev + 1)} />
       <Button title="Decrease" onPress={() => setCounter((prev) => prev - 1)} />
-      <Title>Current Count</Title>
-      <StyledText center>{counter}</StyledText>
     </StyledView>
   );
 };

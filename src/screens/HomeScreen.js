@@ -7,7 +7,7 @@ const HomeScreen = ({ navigation }) => {
       <Text style={styles.text}>Welcome to my app</Text>
 
       {/* self-closing element */}
-      <Button
+      {/* <Button
         title="Go to ComponentScreen"
         onPress={() => navigation.navigate('Components')}
       />
@@ -15,7 +15,7 @@ const HomeScreen = ({ navigation }) => {
       <Button
         title="Go to ListScreen"
         onPress={() => navigation.navigate('List')}
-      />
+      /> */}
 
       <Button
         title="Go to ImageScreen"
