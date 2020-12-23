@@ -5,27 +5,27 @@ import styled from 'styled-components';
 import ColorCounter from '../components/ColorCounter';
 
 const COLOR_INCREMENT = 10;
-const reducer = (state, action) => {
-  // state: {red: 0,blue: 0, green: 0};
-  // action: {colorToChange:'red',change:+15}
-  switch (action.colorToChange) {
-    case 'red': {
-      if (red + increment < 255 && red + increment >= 0) {
-      }
-      return { ...state, red: state.red + action.change };
-      break;
-    }
-    case 'blue': {
-      return { ...state, blue: state.blue + action.change };
-    }
-    case 'green': {
-      return { ...state, green: state.green + action.change };
-    }
-    default: {
-      return state;
-    }
-  }
-};
+// const reducer = (state, action) => {
+//   // state: {red: 0,blue: 0, green: 0};
+//   // action: {colorToChange:'red',change:+15}
+//   switch (action.colorToChange) {
+//     case 'red': {
+//       if (red + increment < 255 && red + increment >= 0) {
+//       }
+//       return { ...state, red: state.red + action.change };
+//       break;
+//     }
+//     case 'blue': {
+//       return { ...state, blue: state.blue + action.change };
+//     }
+//     case 'green': {
+//       return { ...state, green: state.green + action.change };
+//     }
+//     default: {
+//       return state;
+//     }
+//   }
+// };
 const ColorSquare = () => {
   // const initialState = {
   //   red: 0,
