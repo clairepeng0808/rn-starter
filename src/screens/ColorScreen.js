@@ -1,11 +1,6 @@
 import React, { useState } from 'react';
 import { View, Button, FlatList } from 'react-native';
-import {
-  StyledView,
-  Title,
-  StyledText,
-  StyledFlatList,
-} from '../components/Basics';
+import { StyledView, Title, StyledText } from '../components/Basics';
 import styled from 'styled-components';
 
 const ColorScreen = () => {
