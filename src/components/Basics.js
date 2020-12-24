@@ -22,7 +22,6 @@ export const Title = styled(Text)`
       padding: 20px;
     `}
 `;
-
 export const StyledText = styled(Text)`
   font-size: 20px;
   color: ${(props) => (props.color ? props.color : '#000000')};
@@ -33,7 +32,6 @@ export const StyledText = styled(Text)`
       text-align: center;
     `};
 `;
-
 export const StyledFlatList = styled(FlatList)`
   margin: 20px;
 `;

@@ -10,6 +10,7 @@ const ColorScreen = () => {
       <Title>Color</Title>
       <View
         style={{
+          padding: 0,
           display: 'flex',
           flexDirection: 'row',
           justifyContent: 'start',
