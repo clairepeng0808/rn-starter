@@ -77,8 +77,8 @@ async function sendPushNotification(expoPushToken) {
   const message = {
     to: expoPushToken,
     sound: 'default',
-    title: 'Original Title',
-    body: 'And here is the body!',
+    title: 'Wayne 是前端大大',
+    body: 'Claire 實驗 推播API',
     data: { data: 'goes here' },
   };
 
