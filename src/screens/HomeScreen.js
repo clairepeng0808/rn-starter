@@ -1,10 +1,11 @@
 import React from 'react';
 import { Text, StyleSheet, View, Button, TouchableOpacity } from 'react-native';
+import { Title } from '../components/Basics';
 
 const HomeScreen = ({ navigation }) => {
   return (
     <View>
-      <Text style={styles.text}>Welcome to my app</Text>
+      <Title style={styles.text}>Welcome to my app</Title>
 
       {/* self-closing element */}
       {/* <Button

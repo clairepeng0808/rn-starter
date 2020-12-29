@@ -60,7 +60,9 @@ const ColorSquare = () => {
 
   return (
     <StyledView>
-      <Title style={{ marginBottom: 20 }}>Color Square</Title>
+      <Title center style={{ marginBottom: 20 }}>
+        Color Square
+      </Title>
       <ColorCounter
         color="RED"
         onIncrease={() => setColors('red', COLOR_INCREMENT)}
