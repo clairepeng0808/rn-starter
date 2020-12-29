@@ -1,3 +1,4 @@
+import React, { useState, useEffect, useRef } from 'react';
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import HomeScreen from './src/screens/HomeScreen';
@@ -7,6 +8,7 @@ import ImageScreen from './src/screens/ImageScreen';
 import CounterScreen from './src/screens/CounterScreen';
 import ColorScreen from './src/screens/ColorScreen';
 import ColorSquare from './src/screens/ColorSquare';
+import PushNotification from './src/screens/PushNotification';
 
 const navigator = createStackNavigator(
   {
@@ -17,6 +19,7 @@ const navigator = createStackNavigator(
     Counter: CounterScreen,
     Color: ColorScreen,
     ColorSquare: ColorSquare,
+    PushNotification: PushNotification,
   },
   {
     initialRouteName: 'Home',
